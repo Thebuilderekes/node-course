@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../partials/head.ejs') %>
+
+    <body>
+        <%- include('../partials/nav.ejs') %>
+            <h1>This is the homepage</h1>
+            <h2>All blogs</h2>
+
+            <div class="blog content">
+                <% if (blogs.length> 0) { %>
+                 <% blogs.forEach(blog=> { %>
+                    <h3 class="title">
+                            <%= blog.title %>
+                                </h3>
+                                <p class="snippet">
+                                    <%= blog.snippet %>
+                                </p>
+                            <%  }) %>
+                              <%  } else { %> 
+                              <p> there is no blog</p> 
+                              <% } %>
+
+            </div>
+
+            <footer id="footer" style="background-color: blue;"  >
+
+                <%- include('../partials/footer.ejs') %>
+            </footer>
+    </body>
+
+</html>

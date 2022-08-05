@@ -1,0 +1,11 @@
+#Topics to learn in node.
+
+What is node?
+    file system in node - readFile, writeFile, 
+    nodemon dependency for quick reload of node server
+what is express?
+    Use of view engines in express
+    use of middleware in express
+    3rd party middleware 
+        - morgan (used to allow detailed console.log messages)
+        and whole lot more...
